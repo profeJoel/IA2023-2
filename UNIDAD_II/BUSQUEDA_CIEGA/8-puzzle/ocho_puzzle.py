@@ -1,6 +1,8 @@
 import math
 from nodo import nodo_estado
 from collections import deque
+import sys
+sys.setrecursionlimit(500000)
 
 #def ordenar_por_heuristica(e):
 #    return e.get_distancia()
