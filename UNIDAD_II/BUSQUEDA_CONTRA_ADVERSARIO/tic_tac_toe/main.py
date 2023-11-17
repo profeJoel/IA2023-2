@@ -14,5 +14,6 @@ if __name__ == "__main__":
 
     #tictactoe = tablero(humano, humano2)
     tictactoe = tablero(humano, bot)
+    #tictactoe = tablero(bot, humano)
     
     tictactoe.inicia_partida()

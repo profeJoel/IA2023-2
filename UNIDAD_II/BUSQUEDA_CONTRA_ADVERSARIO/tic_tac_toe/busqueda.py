@@ -205,8 +205,10 @@ class busqueda:
             return minimo
 
     def inicia_busqueda(self):
-        #self.algoritmo_minimax(self.estado_inicial, 2, True)
-        #self.algoritmo_minimax_alpha_beta(self.estado_inicial, 6, -math.inf, math.inf, True)
+        #self.algoritmo_minimax(self.estado_inicial, 8, True)
+        #self.algoritmo_minimax_alpha_beta(self.estado_inicial, 8, -math.inf, math.inf, True)
+        # Profundidad iterativa
+        
         mejor = -math.inf
         lista_solucion = []
         for profundidad in range(2,9):
@@ -219,4 +221,5 @@ class busqueda:
                 self.estado_solucion = solucion[0]
                 
         print("Estados Descubiertos: " + str(self.estados_descubiertos))
+        
         return self.estado_solucion
